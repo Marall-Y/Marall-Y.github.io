@@ -54,9 +54,9 @@ body {
   font-weight: 600;
 }
 
-.btn {
+.main .btn1 {
   text-decoration: none;
-  font-size: 180%;
+  font-size: 120%;
   font-weight: 600;
   word-spacing: 5px;
   margin-left: 100px;
@@ -67,115 +67,110 @@ body {
   word-spacing: 2px;
 }
 
-/* Our Products */
-/*h2 {
-  text-align: center;
-  margin-top: 25px;
-  margin-bottom: 0;
-  font: 0.5%;
+/* پرفروش ترین محصولات */
+
+/* تیتر پرفروش ترین محصولات */
+
+.bestsell-head {
+  display: flex;
+  flex-direction: row;
+  margin-top: 20px;
+  font-size: 120%;
+  font-weight: 500;
+  justify-content: space-between;
 }
-.panel h3 {
-  color: rgb(10, 10, 10);
+
+.head1 {
+  margin-left: 80px;
+  text-decoration: none;
+  color: #555;
+  cursor: pointer;
 }
-.products {
-  width: 100%;
-  margin: 0;
+.head1.btn.btn-outline-secondary {
+  color: #212529;
 }
-.container {
-  width: 45vw;
-  height: 60vh;
-  margin: 0 auto;
-  list-style-type: none;
+
+.head2 {
+  margin-right: 80px;
+  align-items: flex-start;
 }
-.panel {
-  width: 546px;
-  height: 244.792px;
-  opacity: 0;
-  border: 1px solid rgb(14, 12, 12);
-  border-radius: 10px;
-  z-index: 1;
+
+/* اسلاید پرفروش ترین محصولات */
+
+.testimonials {
+  background-color: #ffffff;
   position: relative;
+  padding-top: 20px;
+}
+.testimonials:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 30%;
+  background-color: #ddd;
+}
 
-  -webkit-transition: opacity 1s;
-  -moz-transition: opacity 1s;
-  -o-transition: opacity 1s;
-  transition: opacity 1s;
+#customers-testimonials .item-details {
+  background-color: #333333;
+  color: #fff;
+  padding: 20px 10px;
+  text-align: left;
 }
 
-.panel:nth-of-type(1) {
-  background-image: url(images/img1.jpg);
-  position: absolute;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+#customers-testimonials .item-details h5 {
+  margin: 0 0 15px;
+  font-size: 18px;
+  line-height: 18px;
 }
-.panel:nth-of-type(2) {
-  background-image: url(images/img2.jpg);
-  position: absolute;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+
+#customers-testimonials .item-details span {
+  color: red;
+  float: right;
+  padding-right: 20px;
 }
-.panel:nth-of-type(3) {
-  background-image: url(images/img3.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  position: absolute;
-  background-size: cover;
+
+#customers-testimonials p {
+  font-size: 14px;
 }
-.panel:nth-of-type(4) {
-  background-image: url(images/img4.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  position: absolute;
-  background-size: cover;
+
+#customers-testimonials .item {
+  text-align: center;
+  /*padding: 20px;*/
+  margin-bottom: 80px;
 }
-.panel:nth-of-type(5) {
-  background-image: url(images/img5.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  position: absolute;
-  background-size: cover;
+
+.owl-carousel .owl-nav [class*="owl-"] {
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
-.panel:nth-of-type(6) {
-  background-image: url(images/img6.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  position: absolute;
-  background-size: cover;
+.owl-carousel .owl-nav [class*="owl-"].disabled:hover {
+  background-color: #d6d6d6;
 }
-.panel:nth-of-type(7) {
-  background-image: url(images/img7.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  position: absolute;
-  background-size: cover;
+.owl-carousel {
+  position: relative;
 }
-.panel:nth-of-type(8) {
-  background-image: url(images/img8.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
+.owl-carousel .owl-next,
+.owl-carousel .owl-prev {
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  border-radius: 50%;
   position: absolute;
-  background-size: cover;
+  top: 30%;
+  font-size: 20px;
+  color: #fff;
+  border: 1px solid #ddd;
+  text-align: center;
 }
-.panel:nth-of-type(9) {
-  background-image: url(images/img9.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  position: absolute;
-  background-size: cover;
+.owl-carousel .owl-prev {
+  left: -70px;
 }
-.panel:nth-of-type(10) {
-  background-image: url(images/img10.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  position: absolute;
-  background-size: cover;
+.owl-carousel .owl-next {
+  right: -70px;
 }
-.active {
-  opacity: 1;
-  z-index: 2;
-}*/
 
 /* Categories*/
 

@@ -5,6 +5,14 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+
     <!-- Bootstrap CSS -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css"
@@ -12,6 +20,22 @@
       integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6"
       crossorigin="anonymous"
     />
+    <link
+      rel="stylesheet"
+      href="owlcarousel/dist/assets/owl.carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="owlcarousel/dist/assets/owl.theme.default.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+      integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk"
+      crossorigin="anonymous"
+    />
+
+    <script src="owlcarousel/docs/assets/vendors/jquery.min.js"></script>
 
     <title>Marpet</title>
   </head>
@@ -33,12 +57,120 @@
 
     <div class="main">
       <h1>هر آنچه که حیوان خانگی شما نیاز دارد</h1>
-      <a class="btn" href="#">مشاهده محصولات</a>
+      <a class="btn1" href="#">مشاهده محصولات</a>
     </div>
   </header>
 
   <body>
-    <!-- پر فروش ترین محصولات-->
+    <!--پرفروش ترین محصولات-->
+
+    <div class="bestsell-head">
+      <a class="head1 btn btn-outline-secondary">مشاهده همه</a>
+      <div class="head2">پرفروش ترین محصولات</div>
+    </div>
+
+    <!-- TESTIMONIALS -->
+    <section class="testimonials">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <div id="customers-testimonials" class="owl-carousel">
+              <!--TESTIMONIAL 1 -->
+              <div class="item">
+                <div class="shadow-effect">
+                  <img
+                    class="img-responsive"
+                    src="https://image.freepik.com/free-photo/spaghetti-with-carbonara-sauce_1216-324.jpg"
+                    alt=""
+                  />
+                  <div class="item-details">
+                    <h5>Chicken for two Roasted <span>$21</span></h5>
+                    <p>
+                      There was a time when Chinese food in this country meant
+                      (Americanized) Cantonese food.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!--END OF TESTIMONIAL 1 -->
+              <!--TESTIMONIAL 2 -->
+              <div class="item">
+                <div class="shadow-effect">
+                  <img
+                    class="img-responsive"
+                    src="https://image.freepik.com/free-photo/dishes-with-healthy-waffles_1220-367.jpg"
+                    alt=""
+                  />
+                  <div class="item-details">
+                    <h5>Chicken for two Roasted <span>$21</span></h5>
+                    <p>
+                      There was a time when Chinese food in this country meant
+                      (Americanized) Cantonese food.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!--END OF TESTIMONIAL 2 -->
+              <!--TESTIMONIAL 3 -->
+              <div class="item">
+                <div class="shadow-effect">
+                  <img
+                    class="img-responsive"
+                    src="https://image.freepik.com/free-photo/top-view-of-tasty-noodles-with-prawns_1203-1769.jpg"
+                    alt=""
+                  />
+                  <div class="item-details">
+                    <h5>Chicken for two Roasted <span>$21</span></h5>
+                    <p>
+                      There was a time when Chinese food in this country meant
+                      (Americanized) Cantonese food.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!--END OF TESTIMONIAL 3 -->
+              <!--TESTIMONIAL 4 -->
+              <div class="item">
+                <div class="shadow-effect">
+                  <img
+                    class="img-responsive"
+                    src="https://image.freepik.com/free-photo/burguer-with-garnish_1088-72.jpg"
+                    alt=""
+                  />
+                  <div class="item-details">
+                    <h5>Chicken for two Roasted <span>$21</span></h5>
+                    <p>
+                      There was a time when Chinese food in this country meant
+                      (Americanized) Cantonese food.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!--END OF TESTIMONIAL 4 -->
+              <!--TESTIMONIAL 5 -->
+              <div class="item">
+                <div class="shadow-effect">
+                  <img
+                    class="img-responsive"
+                    src="https://image.freepik.com/free-photo/delicious-pastry-with-chicken_1203-1616.jpg"
+                    alt=""
+                  />
+                  <div class="item-details">
+                    <h5>Chicken for two Roasted <span>$21</span></h5>
+                    <p>
+                      There was a time when Chinese food in this country meant
+                      (Americanized) Cantonese food.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!--END OF TESTIMONIAL 5 -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- END OF TESTIMONIALS -->
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script
@@ -47,5 +179,7 @@
       crossorigin="anonymous"
     ></script>
     <script src="script.js"></script>
+
+    <script src="owlcarousel/dist/owl.carousel.min.js"></script>
   </body>
 </html>
