@@ -1,0 +1,250 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Nunito", sans-serif;
+  font-size: 300;
+  background-color: #fff;
+  color: #555;
+}
+
+/*Navigation*/
+.navigation {
+  display: flex;
+}
+
+.logo-section {
+  margin-right: 500px;
+  margin-left: 50px;
+}
+
+.main-nav ul {
+  list-style: none;
+  display: flex;
+}
+.main-nav ul li {
+  margin: 15px 20px;
+  font-size: 130%;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.main-nav ul :hover,
+.main-nav ul :active {
+  border-bottom: solid 1px rgb(252, 151, 0);
+}
+
+/* Main Section*/
+.main {
+  width: 100%;
+  background-image: url(/images/MainPhoto.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  padding-top: 200px;
+}
+.main h1 {
+  margin-left: 30px;
+  margin-bottom: 20px;
+  color: rgb(255, 255, 255);
+  font-size: 150%;
+  font-weight: 600;
+}
+
+.btn {
+  text-decoration: none;
+  font-size: 180%;
+  font-weight: 600;
+  word-spacing: 5px;
+  margin-left: 100px;
+  border: 2px solid rgb(255, 255, 255);
+  background-color: rgb(255, 255, 255);
+  border-radius: 5%;
+  padding: 5px 15px;
+  word-spacing: 2px;
+}
+
+/* Our Products */
+/*h2 {
+  text-align: center;
+  margin-top: 25px;
+  margin-bottom: 0;
+  font: 0.5%;
+}
+.panel h3 {
+  color: rgb(10, 10, 10);
+}
+.products {
+  width: 100%;
+  margin: 0;
+}
+.container {
+  width: 45vw;
+  height: 60vh;
+  margin: 0 auto;
+  list-style-type: none;
+}
+.panel {
+  width: 546px;
+  height: 244.792px;
+  opacity: 0;
+  border: 1px solid rgb(14, 12, 12);
+  border-radius: 10px;
+  z-index: 1;
+  position: relative;
+
+  -webkit-transition: opacity 1s;
+  -moz-transition: opacity 1s;
+  -o-transition: opacity 1s;
+  transition: opacity 1s;
+}
+
+.panel:nth-of-type(1) {
+  background-image: url(images/img1.jpg);
+  position: absolute;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.panel:nth-of-type(2) {
+  background-image: url(images/img2.jpg);
+  position: absolute;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.panel:nth-of-type(3) {
+  background-image: url(images/img3.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  background-size: cover;
+}
+.panel:nth-of-type(4) {
+  background-image: url(images/img4.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  background-size: cover;
+}
+.panel:nth-of-type(5) {
+  background-image: url(images/img5.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  background-size: cover;
+}
+.panel:nth-of-type(6) {
+  background-image: url(images/img6.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  background-size: cover;
+}
+.panel:nth-of-type(7) {
+  background-image: url(images/img7.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  background-size: cover;
+}
+.panel:nth-of-type(8) {
+  background-image: url(images/img8.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  background-size: cover;
+}
+.panel:nth-of-type(9) {
+  background-image: url(images/img9.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  background-size: cover;
+}
+.panel:nth-of-type(10) {
+  background-image: url(images/img10.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  background-size: cover;
+}
+.active {
+  opacity: 1;
+  z-index: 2;
+}*/
+
+/* Categories*/
+
+.categories {
+  width: 100%;
+  height: 60vh;
+  display: flex;
+}
+.category-title {
+  width: 100%;
+  display: flex;
+  padding: 5px;
+}
+.deserve {
+  background-image: url(/images/amy-baugess-MNju0A6EeE0-unsplash.jpg);
+  background-repeat: no-repeat;
+  flex: 40;
+  height: 337.2px;
+}
+
+.deserve p {
+  top: 10px;
+  right: 10px;
+  color: #fff;
+  font-size: 150%;
+  font-weight: 600;
+}
+
+.offproducts {
+  flex: 60;
+  background-color: rgb(238, 223, 223);
+  height: 337.2px;
+  margin-left: 20px;
+  position: relative;
+}
+
+.ribbon-wrapper {
+  width: 85px;
+  height: 88px;
+  overflow: hidden;
+  position: relative;
+}
+
+.ribbon {
+  font: bold 20px sans-serif;
+  color: #333;
+  text-align: center;
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  padding: 7px 0;
+  top: 10px;
+  left: -30px;
+  width: 120px;
+  background-color: rgb(185, 45, 45);
+  color: #fff;
+  position: absolute;
+}
+
+#carouselExampleIndicators {
+  width: 600px;
+  height: 350px;
+  top: 10px;
+  right: 60px;
+  position: absolute;
+}
+
+.carousel-inner.except {
+  width: 100%;
+  height: 300px;
+}
