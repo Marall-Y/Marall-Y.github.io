@@ -14,6 +14,7 @@ body {
 /*Navigation*/
 .navigation {
   display: flex;
+  color: #555;
 }
 
 .logo-section {
@@ -54,7 +55,7 @@ body {
   font-weight: 600;
 }
 
-.main .btn1 {
+.mainbtn {
   text-decoration: none;
   font-size: 120%;
   font-weight: 600;
@@ -65,24 +66,34 @@ body {
   border-radius: 5%;
   padding: 5px 15px;
   word-spacing: 2px;
+  color: #555;
 }
 
 /* پرفروش ترین محصولات */
 
 /* تیتر پرفروش ترین محصولات */
 
-.bestsell-head {
+.sections-head {
+  padding: 20px 40px;
   display: flex;
   flex-direction: row;
-  margin-top: 20px;
   font-size: 120%;
   font-weight: 500;
   justify-content: space-between;
 }
+.sections-head.head1 {
+  background-color: #fdfafb;
+}
+.sections-head.head2 {
+  background-color: #e3d9df;
+}
+.sections-head.head3 {
+  background-color: #ebccd4;
+}
 
 .head1 {
-  margin-left: 80px;
   text-decoration: none;
+
   color: #555;
   cursor: pointer;
 }
@@ -91,38 +102,37 @@ body {
 }
 
 .head2 {
-  margin-right: 80px;
   align-items: flex-start;
 }
 
 /* اسلاید پرفروش ترین محصولات */
 
+.shadow-effect {
+  box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1), 0 0 0 2px rgb(255, 255, 255),
+    0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+}
+
 .testimonials {
-  background-color: #ffffff;
+  background-color: #fdfafb;
   position: relative;
   padding-top: 20px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 #customers-testimonials .item-details {
-  background-color: #333333;
+  background-color: #5a5a5a;
   color: #fff;
-  padding: 20px 10px;
+  padding: 30px 10px;
   text-align: left;
+  height: 120px;
 }
 
 #customers-testimonials .item-details h5 {
-  margin: 0 0 15px;
+  width: 250px;
+  color: #ebebeb;
+  text-align: center;
+  margin: 0 auto;
   font-size: 18px;
-  line-height: 18px;
-}
-
-#customers-testimonials .item-details span {
-  color: red;
-  float: right;
-  padding-right: 20px;
-}
-
-#customers-testimonials p {
-  font-size: 14px;
+  line-height: 25px;
 }
 
 #customers-testimonials .item {
@@ -163,9 +173,10 @@ body {
 
 /* DOG SECTION */
 .dogs-part {
-  margin-bottom: 40px;
+  background-color: #e3d9df;
   height: 430px;
   display: flex;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 .dogs-container {
@@ -173,29 +184,72 @@ body {
   height: 430px;
   width: 1116px;
   margin: 0 auto;
+  padding-bottom: 60px;
 }
+
+.blurred-box {
+  position: absolute;
+  background-color: #fff;
+  opacity: 0.7;
+}
+.blurred-inner {
+  text-align: center;
+  margin: 0 auto;
+}
+
+/* DOG TOYS */
 #dogs-toys {
   flex-grow: 1;
   padding: 5px;
   margin: 20px;
   background-color: #c47179;
+  position: relative;
 }
 
+.blurred-box.dog-toys {
+  top: 20px;
+  left: 20px;
+  width: 210px;
+  height: 140px;
+}
+.blurred-inner.dog-toys {
+  width: 200px;
+  padding: 45px 0;
+}
+.dogs-toys-image {
+  width: 200px;
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+}
+/* DOG FOOD */
 #dogs-food {
   flex-grow: 2;
   margin: 20px;
   padding: 5px;
-  background-image: url(images/DogSection/DogFood.jpg);
+  background-image: url(images/DogSection/kojirou-sasaki-AE4nDmxQYtI-unsplash.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
   position: relative;
 }
-.blurred-box {
-  position: absolute;
+
+.blurred-box.dog-food {
   bottom: 10px;
   left: 40px;
   width: 260px;
   height: 100px;
-  background-color: #fff;
-  opacity: 0.7;
+}
+.blurred-inner.dog-food {
+  width: 260px;
+  padding: 25px 0;
+}
+
+.blurred-title a {
+  font-size: 170%;
+  font-weight: bold;
+  text-decoration: none;
+  color: rgb(0, 0, 0);
 }
 
 #dogs3 {
@@ -205,12 +259,164 @@ body {
   justify-content: space-between;
   margin: 20px;
 }
+/* ِDOG BEDS */
 #dogs-bed {
   flex: 1;
   background-image: url(images/DogSection/DogBed.jpg);
+  position: relative;
 }
+.blurred-box.dog-beds {
+  bottom: 10px;
+  left: 35px;
+  width: 180px;
+  height: 60px;
+}
+.blurred-inner.dog-food {
+  width: 260px;
+  padding: 25px 0;
+}
+/* DOG PLATES */
 #dogs-plate {
   margin-top: 10px;
   flex: 1;
   background-color: #6998a3;
+  position: relative;
+}
+.blurred-box.dog-plates {
+  bottom: 20px;
+  left: 35px;
+  width: 180px;
+  height: 120px;
+}
+.blurred-inner.dog-plates {
+  width: 180px;
+  padding: 3px 0;
+}
+.blurred-title.b a {
+  font-size: 170%;
+  font-weight: bold;
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+}
+
+/* CATS SECTION */
+
+.cats-part {
+  background-color: #ebccd4;
+  margin-bottom: 40px;
+  height: 430px;
+  display: flex;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.cats-container {
+  display: flex;
+  height: 430px;
+  width: 1116px;
+  margin: 0 auto;
+}
+
+/* CAT TOYS */
+#cats-toys {
+  background-image: url(images/CatSection/1.png);
+  background-position: center;
+  background-size: cover;
+  flex-grow: 2;
+  padding: 5px;
+  margin: 20px;
+  position: relative;
+}
+
+.blurred-box.cats-toys {
+  bottom: 20px;
+  right: 140px;
+  width: 210px;
+  height: 110px;
+}
+.blurred-inner.cats-toys {
+  width: 200px;
+  padding: 30px 0;
+}
+
+/* CAT FOOD */
+#cats-food {
+  flex-grow: 1;
+  margin: 20px;
+  padding: 5px;
+  background-color: #e3adca;
+  position: relative;
+}
+
+.blurred-box.cat-food {
+  top: 10px;
+  left: 35px;
+  width: 190px;
+  height: 100px;
+}
+.blurred-inner.cat-food {
+  width: 150px;
+  padding: 25px 0;
+}
+
+.blurred-title a {
+  font-size: 170%;
+  font-weight: bold;
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+}
+.cats-toys-image {
+  width: 150px;
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+}
+
+#cats3 {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 20px;
+}
+/* ِCAT BEDS */
+#cats-bed {
+  flex: 1;
+  background-image: url(images/CatSection/3.jpg);
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+.blurred-box.cat-beds {
+  bottom: 10px;
+  left: 35px;
+  width: 180px;
+  height: 60px;
+}
+.blurred-inner.cat-beds {
+  width: 180px;
+  padding: 10px 0;
+}
+/* CAT PLATES */
+#cats-plate {
+  margin-top: 10px;
+  flex: 1;
+  background-color: #d2618c;
+  position: relative;
+}
+.blurred-box.cat-plates {
+  position: absolute;
+  bottom: 20px;
+  left: 35px;
+  width: 180px;
+  height: 150px;
+}
+.blurred-inner.cat-plates {
+  width: 180px;
+  padding: 15px 0;
+}
+.blurred-title.b a {
+  font-size: 170%;
+  font-weight: bold;
+  text-decoration: none;
+  color: rgb(0, 0, 0);
 }
