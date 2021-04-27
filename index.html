@@ -11,6 +11,7 @@
       integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="icons/ionicons/" />
 
     <link rel="stylesheet" href="style.css" />
 
@@ -44,16 +45,58 @@
   <!-- Header -->
   <header>
     <nav class="navigation">
-      <div class="logo-section">
-        <img src="/images/LOGO.png" alt="Marpet Logo" />
-      </div>
-      <div class="main-nav">
-        <ul>
-          <li>پیگیری خرید</li>
-          <li>سبد خرید</li>
-          <li>محصولات</li>
-          <li>ارتباط با ما</li>
-        </ul>
+      <div class="top-nav">
+        <div class="shopping-basket">
+          <a href="#">
+            <img
+              src="icons/ionicons/shopping-cart.svg"
+              alt="shopping-basket"
+              style="width: 40px"
+              height="20px"
+            />
+          </a>
+        </div>
+        <div class="sign-in">
+          <div class="sign-in-inner">
+            <li><a href="">ورود/ عضویت</a><i class="far fa-user"></i></li>
+          </div>
+        </div>
+        <div class="wrap">
+          <div class="search">
+            <button type="submit" class="searchButton">
+              <i class="fa fa-search"></i>
+            </button>
+          </div>
+        </div>
+        <div class="logo-section">
+          <a href="index.html"
+            ><img src="/images/output-onlinepngtools.png" alt="Marpet Logo"
+          /></a>
+        </div>
+        <div class="main-nav">
+          <ul>
+            <li>
+              <i class="fas fa-dog"></i><a href="">سگ</a>
+              <div class="sub-menu-1">
+                <ul>
+                  <li>غذای سگ</li>
+                  <li>جای خواب</li>
+                  <li>اسباب بازی</li>
+                  <li>جای آب و غذا</li>
+                </ul>
+              </div>
+            </li>
+            <li><i class="fas fa-cat"></i><a href="">گربه</a></li>
+            <li>
+              <i class="fas fa-percent" style="font-size: small"></i
+              ><a href="">تخفیف های ویژه</a>
+            </li>
+            <li>
+              <i class="fas fa-phone" style="font-size: small"></i
+              ><a href="">ارتباط با ما</a>
+            </li>
+          </ul>
+        </div>
       </div>
     </nav>
 
@@ -356,5 +399,6 @@
     <script src="script.js"></script>
 
     <script src="owlcarousel/dist/owl.carousel.min.js"></script>
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
   </body>
 </html>
