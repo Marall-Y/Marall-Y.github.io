@@ -3,9 +3,16 @@
   padding: 0;
   box-sizing: border-box;
 }
+@font-face {
+  font-family: Gandom;
+  src: url("Font/Gandom/Gandom.eot");
+  src: url("Font/Gandom/Gandom.eot") format("embedded-opentype"),
+    url("Font/Gandom/Gandom.woff") format("woff"),
+    url("Font/Gandom/Gandom.ttf") format("truetype");
+  font-weight: normal;
+}
 
 body {
-  font-family: "Nunito", sans-serif;
   font-size: 300;
   background-color: #fff;
   color: #555;
@@ -16,6 +23,7 @@ body {
   color: #555;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
     rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+  height: 80px;
 }
 .top-nav {
   display: flex;
@@ -24,15 +32,15 @@ body {
 .shopping-basket {
   width: 50px;
   padding: 10px;
-  flex: 0.2;
-  margin-top: 10px;
+  flex: 0.1;
+  margin-top: 15px;
 }
 .shopping-basket a {
   cursor: pointer;
 }
 .sign-in {
-  flex: 0.7;
-  margin-top: 15px;
+  flex: 0.4;
+  margin-top: 10px;
 }
 .sign-in-inner {
   flex-direction: row;
@@ -54,43 +62,111 @@ body {
   font-size: 100%;
   align-items: center;
 }
-
-.wrap {
-  flex: 1.4;
-  margin-right: 10px;
-  margin-top: 15px;
+form {
+  flex: 0.75;
+  max-width: 390px;
+  margin-right: 5px;
+  margin-left: 5px;
 }
 
-.searchButton {
-  width: 40px;
-  height: 30px;
-  border: 1px solid #00b4cc;
-  background: #81c0c9;
-  text-align: center;
-  color: #fff;
-  border-radius: 5px;
+form .inner-form {
+  width: 85%;
+  margin-right: 5px;
+}
+
+form .inner-form .input-field {
+  height: 80px;
+  width: 100%;
+  position: relative;
+  padding-bottom: 15px;
+}
+
+form .inner-form .input-field input {
+  height: 100%;
+  width: 100%;
+  background: transparent;
+  border: 0;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+  display: block;
+  width: 100%;
+  padding: 20px 15px 10px 30px;
+  font-size: 15px;
+  color: #555;
+  transition: all 0.2s ease-out, color 0.2s ease-out;
+  direction: rtl;
+}
+
+form .inner-form .input-field input.placeholder {
+  color: #555;
+  font-size: 18px;
+  width: 100%;
+}
+
+form .inner-form .input-field input:-moz-placeholder {
+  color: #555;
+  font-size: 18px;
+}
+
+form .inner-form .input-field input::-webkit-input-placeholder {
+  color: #555;
+  font-size: 18px;
+}
+
+form .inner-form .input-field input:hover,
+.s129 form .inner-form .input-field input:focus {
+  box-shadow: none;
+  outline: 0;
+  border-bottom-color: #555;
+}
+
+form .inner-form .input-field .btn-search {
+  width: 50px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  align-items: center;
+  position: absolute;
+  left: 0;
+  height: 100%;
+  background: transparent;
+  border: 0;
+  padding: 0;
   cursor: pointer;
-  font-size: 20px;
+}
+
+form .inner-form .input-field .btn-search svg {
+  fill: #555;
+  width: 50px;
+  height: 50px;
+}
+
+form .inner-form .input-field .btn-search:hover,
+.s129 form .inner-form .input-field .btn-search:focus {
+  outline: 0;
+  box-shadow: none;
 }
 
 .logo-section {
-  flex: 0.65;
+  flex: 0.7;
   position: relative;
-  padding: 5px;
 }
 .logo-section img {
   width: 135px;
   position: absolute;
-  top: 10px;
+  top: 20px;
+  right: 15px;
 }
 .main-nav {
-  flex: 2.55;
+  flex: 1.5;
+  padding-top: 5px;
+  margin-left: 5px;
 }
 .main-nav a {
   text-decoration: none;
   color: #555;
 }
 .main-nav ul {
+  margin: 0 auto;
   list-style: none;
   margin-right: 20px;
   margin-left: 20px;
@@ -99,6 +175,7 @@ body {
   display: flex;
   font-size: 80%;
   direction: rtl;
+  font-family: gandom;
 }
 .main-nav ul li {
   color: #555;
@@ -145,6 +222,9 @@ body {
 /*ICONS */
 .fas {
   margin-left: 5px;
+}
+.far {
+  margin-left: 8px;
 }
 /* Main Section*/
 .main {
@@ -202,7 +282,6 @@ body {
 
 .head1 {
   text-decoration: none;
-
   color: #555;
   cursor: pointer;
 }
@@ -210,8 +289,11 @@ body {
   color: #212529;
 }
 
-.head2 {
-  align-items: flex-start;
+.head1.btn.btn-outline-secondary:hover {
+  color: #fff;
+}
+.head2.first {
+  cursor: default;
 }
 
 /* اسلاید پرفروش ترین محصولات */
@@ -229,6 +311,7 @@ body {
   padding: 30px 10px;
   text-align: left;
   height: 120px;
+  font-family: gandom;
 }
 
 #customers-testimonials .item-details h5 {
@@ -533,7 +616,7 @@ body {
 .home-newsletter {
   padding: 60px 0;
   background: #a75858;
-  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px - 10px;
 }
 
 .home-newsletter .single {
@@ -666,4 +749,138 @@ footer {
   flex: 1;
   margin: 5px 5px 0;
   position: relative;
+}
+
+/*** INDEX 2 ***/
+
+.wrapper-shop {
+  width: 100vw;
+  height: 170px;
+  display: flex;
+}
+.categories {
+  margin: 0 auto;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  display: flex;
+  width: 50%;
+}
+.categoryBox {
+  flex: 1;
+  border-radius: 50%;
+  background-color: #a1dffb;
+  margin: 0 15px;
+  position: relative;
+}
+.category-text {
+  position: absolute;
+  top: 50px;
+  font-size: 110%;
+  font-weight: bold;
+  color: rgb(88, 84, 84);
+}
+.category-text.ex {
+  left: 20px;
+}
+.category-text.ex1 {
+  left: 30px;
+}
+.category-text.ex2 {
+  left: 30px;
+}
+.category-text.ex3 {
+  left: 55px;
+}
+.category-text:hover {
+  color: #fff;
+}
+
+/*** PRODUCTS ***/
+.wrapper {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  margin-top: 50px;
+}
+
+.container {
+  max-width: 100%;
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+/* cards */
+
+.cards {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 100px;
+  flex-wrap: wrap;
+  margin: 0 -15px;
+}
+.cards__box {
+  background-color: #fff;
+
+  flex: 1 100%;
+  border: 0.5px solid #cecece;
+  margin: 15px;
+
+  display: flex;
+  flex-direction: column;
+}
+@media (min-width: 768px) {
+  .cards__box {
+    flex: 1 calc(50% - 30px);
+  }
+}
+@media (min-width: 1024px) {
+  .cards__box {
+    flex: 1 calc(32% - 30px);
+  }
+}
+.cards__box h4 {
+  margin: 25px 0 20px 0;
+  font-style: normal;
+  font-size: 100%;
+}
+.cards__icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  max-width: 300px;
+  max-height: 300px;
+  padding: 10px;
+  flex: 3;
+}
+.cards__icon img {
+  margin-bottom: 10px;
+}
+
+.bottom-box {
+  display: flex;
+  padding: 10px;
+  margin-top: 20px;
+  flex: 1;
+  background-color: #f1e3e2;
+}
+.box-details {
+  display: flex;
+  flex-direction: column;
+  flex: 2;
+}
+.shopping-box {
+  flex: 1;
+  position: relative;
+}
+.shopping-link {
+  position: absolute;
+  bottom: 0;
+  left: 5px;
+}
+.box-price {
+  font-weight: bold;
 }
